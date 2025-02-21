@@ -22,7 +22,7 @@ function News(props) {
 
   useEffect(() => {
     const getNews = async () => {
-      let url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=7d25b8da25844e94925099d8bcb9fec0`;
+      let url = `https://news-aggregator-dusky.vercel.app/all-news?q=bitcoin&apiKey=7d25b8da25844e94925099d8bcb9fec0`;
       try {
         setloading(true);
         const response = await fetch(url);
