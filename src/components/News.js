@@ -22,7 +22,7 @@ function News(props) {
 
   useEffect(() => {
     const getNews = async () => {
-      let url = `https://newsapi.org/v2/everything?q=${query || props.category}&apiKey=330e87d7b7a04229acbf2a4de862c4e0`;
+      let url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=7d25b8da25844e94925099d8bcb9fec0`;
       try {
         setloading(true);
         const response = await fetch(url);
